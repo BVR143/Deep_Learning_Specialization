@@ -1,1 +1,1 @@
-# Deep Learning Specialization
+# Convolutional Neural Network
