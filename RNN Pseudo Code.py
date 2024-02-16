@@ -9,4 +9,7 @@ class MyRNNCell(tf.keras.layers.layer):
     self.W_hh = self.add_weight([rnn_units, rnn_uits])
     self.W_hy= self.add_weight([rnn_units, output_dim])
 
+    # Initialize hidden state to zeros 
+    self.h = tf.zeros([rnn_units,1])
+
     
