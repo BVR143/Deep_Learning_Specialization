@@ -12,4 +12,14 @@ class MyRNNCell(tf.keras.layers.layer):
     # Initialize hidden state to zeros 
     self.h = tf.zeros([rnn_units,1])
 
+  def Call(self, x):
+    # update the hidden state by using the Non-linearity 
+    self.h = tf.math,tanh( (self.W_xh * x) + ( self.W_hh * self.h ))
+
+    # compute the output
+    output = self.W_hy * self.h
+
+    # return the current output and the current hidden state 
+    return output, self.h
+
     
