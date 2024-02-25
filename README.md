@@ -1,3 +1,3 @@
-# Convolutional Neural Network
+# CNN & RNN 
 
 ### Learning...........
